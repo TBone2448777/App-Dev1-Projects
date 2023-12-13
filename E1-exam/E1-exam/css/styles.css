@@ -1,0 +1,99 @@
+/* set the default font to Times New Roman, or Times, or serif, 
+   whichever your browser finds first. */
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* set the header and the footer background to #3700b3, the 
+foreground color to #02dac6, and pad around the header using a
+width of 0.75 times the default font size on the top and bottom, and
+a width of 0.5 x the default font size on the left and right. Both 
+should use the fonts Arial, Helvetica, and sans-serif in that order.
+*/
+header, footer{
+    background-color: #3700b3;
+    color: #02dac6;
+    padding: 0.75em 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Define a rule via the following class that makes the header text 2 x the default 
+   font size and makes it bold. */
+.headerText{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Define a rule via the following class that makes the footer text 0.85 x the default 
+   font size and makes it bold. */
+.footerText{
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+/* Define a rule below that sets the image width to 10 x the default font size,
+   floats the image left, and pads around the image with 0.5 times the default 
+   font size space. */
+aside > img{
+    width: 10em;
+    float: left;
+    padding: 0.5em;
+}
+
+/* Define a rule below that sets the font size of the title in the aside 
+   element to be 1.125 x the default font size and make it bold. */
+#asideTitle{
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+/* Define a rule using the sectionMsg class that sets the font size of 
+   section messages to be 1.125 x the default font size and the color of the
+   text to be #b3b3cc, a gray color. */
+.sectionMsg{
+    font-size: 1.125em;
+    color: #b3b3cc;
+}
+
+/* Define a rule to position the main element to have relative positioning, but 
+do not move the element. */
+main{
+    position: relative;
+}
+
+/* Define a rule to position the section element relative to it's default position.
+   it should be moved up 2 x the default font size and be moved 2 x the default
+   font size left.  In addition set the back ground color to #02dac6, and make this
+   element the back layer of the positioned items on the page. */
+section{
+    position: relative;
+    opacity: 0.5;
+    bottom: 2em;
+    left: 2em;
+    z-index: -10;
+    background-color: #02dac6;
+}
+
+/* Write a rule to position the aside element so that it has an 
+   absolute position that is 2 x the defalut font size above the
+   top of it's nearest positioned ancestor and 1 default font size
+   right of that elements right side.  This element should be at the
+   front of the layers in the page.  In adition, set the foreground 
+   color to #b00020, the background color to #ffffff, the font size to 
+   0.85 x the default font size.  Give the aside a top, bottom and left 
+   margin of 0.5 x the default font size.  Set the border width to 0.08 x
+   the default font size with a solid style and a color of #018786.  Set
+   the padding space to 0.5 x the default font size. The aside's 
+   width should be 30% the width of its ancestor's width.*/
+aside{
+    top: -2em;
+    right: 1em;
+    z-index: 10;
+    color: #b00020;
+    background-color: #FFFFFF;
+    font-size: 0.85em;
+    border: 0.08em solid #018786;
+    padding: 0.5em;
+    width: 30%;
+    position: absolute;
+}

@@ -1,0 +1,36 @@
+body {
+   font-family: Roboto, Helvetica, sans-serif;
+   text-align: center;
+}
+
+.x {
+   color: red;
+}
+
+.o {
+   color: blue;
+ }
+ 
+#board {
+   font: 85px arial, sans-serif;
+   margin: 3px;
+   display: grid;
+   grid-template-columns: 100px 100px 100px;
+   grid-template-rows: 100px 100px 100px;
+   gap: 10px;
+   justify-content: center;
+}
+
+#board > div {
+   border: 1px solid LightSkyBlue;
+   text-align: center;
+}
+
+#reset{
+   background-color: darkgray;
+   border: 2px gray solid;
+   padding: 5px 10px;
+   border-radius: 5px;
+   color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

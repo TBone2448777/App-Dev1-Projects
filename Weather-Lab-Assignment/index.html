@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Weather Lookup</title>
+    <link href="css/weather.css" rel="stylesheet">
+    <script src="js/weather.js"></script>
+</head>
+<body>
+    <div class="mainPage">
+        <header>
+            <h1>Weather Lookup</h1>
+        </header>
+        <main>
+            <div id="searchBox">
+                <!--The zip code search goes here-->
+                <div class="centerInGridRow">
+                    <input type="text" id="zip" placeholder="Enter Zip" required  size="5">
+                </div>
+                <div class="centerInGridRow">
+                    <button id="getWeatherButton">Find Weather</button>
+                </div>
+                <!--Errors are printed here-->
+                <div id="errMsg" class="error noshow">
+                </div>
+            </div>
+            <div id="centerDivider"></div>
+            <div id="weatherBox">
+                <h3 id="city">City</h3>
+                <div id="weatherDetails">
+                    <div class="makeRows">
+                        <p><span id="temp">Temp: </span></p>
+                        <p><span id="feelLike"></span></p>
+                        <p><span id="tempMax"></span><span id="tempMin"></span></p>
+                    </div>
+                    <div class="makeRows">
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Wind Speed: <span id="wind"></span></p>
+                    </div>
+                    <div class="makeRows">
+                        <p>Weather: <span id="weather"></span></p>
+                        <p>Description: <span id="weatherDesc"></span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!--Put your name here-->
+            <h2>&copy;&nbsp;Copyright 2023 by T. Sloan</h2>
+        </footer>
+    </div>
+</body>
+</html>
